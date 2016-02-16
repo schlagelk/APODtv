@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8403D2B21C6A5CB800AF6E27 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403D2B11C6A5CB800AF6E27 /* Protocols.swift */; };
+		8485D6481C6BA8C60087B424 /* APODCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485D6471C6BA8C60087B424 /* APODCell.swift */; };
+		84A7844C1C695F1500F85BA3 /* Earth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A7844B1C695F1500F85BA3 /* Earth.swift */; };
+		84CCEE7F1C62544C0075DBBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCEE7E1C62544C0075DBBD /* AppDelegate.swift */; };
+		84CCEE811C62544C0075DBBD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCEE801C62544C0075DBBD /* FirstViewController.swift */; };
+		84CCEE861C62544C0075DBBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CCEE841C62544C0075DBBD /* Main.storyboard */; };
+		84CCEE881C62544C0075DBBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CCEE871C62544C0075DBBD /* Assets.xcassets */; };
+		84CCEE931C62544C0075DBBD /* intergalacticplanetaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCEE921C62544C0075DBBD /* intergalacticplanetaryTests.swift */; };
+		84CCEE9E1C62575C0075DBBD /* NASAClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCEE9D1C62575C0075DBBD /* NASAClient.swift */; };
+		84CCEEA01C6263F30075DBBD /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCEE9F1C6263F30075DBBD /* FavoritesManager.swift */; };
+		84CCEEA21C6264EA0075DBBD /* APOD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCEEA11C6264EA0075DBBD /* APOD.swift */; };
+		84CCEEA41C62BFBD0075DBBD /* APODRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CCEEA31C62BFBD0075DBBD /* APODRouter.swift */; };
+		84DBD0BC1C6BE7360012EE15 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DBD0BB1C6BE7360012EE15 /* FavoritesViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84CCEE8F1C62544C0075DBBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CCEE731C62544C0075DBBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84CCEE7A1C62544C0075DBBD;
+			remoteInfo = intergalacticplanetary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8403D2B11C6A5CB800AF6E27 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		8485D6471C6BA8C60087B424 /* APODCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODCell.swift; sourceTree = "<group>"; };
+		84A7844B1C695F1500F85BA3 /* Earth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Earth.swift; sourceTree = "<group>"; };
+		84CCEE7B1C62544C0075DBBD /* intergalacticplanetary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intergalacticplanetary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CCEE7E1C62544C0075DBBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84CCEE801C62544C0075DBBD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		84CCEE851C62544C0075DBBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84CCEE871C62544C0075DBBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84CCEE891C62544C0075DBBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84CCEE8E1C62544C0075DBBD /* intergalacticplanetaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = intergalacticplanetaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CCEE921C62544C0075DBBD /* intergalacticplanetaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intergalacticplanetaryTests.swift; sourceTree = "<group>"; };
+		84CCEE941C62544C0075DBBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84CCEE9D1C62575C0075DBBD /* NASAClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NASAClient.swift; sourceTree = "<group>"; };
+		84CCEE9F1C6263F30075DBBD /* FavoritesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesManager.swift; sourceTree = "<group>"; };
+		84CCEEA11C6264EA0075DBBD /* APOD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APOD.swift; sourceTree = "<group>"; };
+		84CCEEA31C62BFBD0075DBBD /* APODRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODRouter.swift; sourceTree = "<group>"; };
+		84DBD0BB1C6BE7360012EE15 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84CCEE781C62544C0075DBBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CCEE8B1C62544C0075DBBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8488B20B1C6E3D8A001D791A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84CCEEA11C6264EA0075DBBD /* APOD.swift */,
+				84A7844B1C695F1500F85BA3 /* Earth.swift */,
+				8403D2B11C6A5CB800AF6E27 /* Protocols.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8488B20C1C6E3D8F001D791A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84DBD0BB1C6BE7360012EE15 /* FavoritesViewController.swift */,
+				84CCEE801C62544C0075DBBD /* FirstViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8488B20D1C6E3D97001D791A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84CCEEA31C62BFBD0075DBBD /* APODRouter.swift */,
+				84CCEE9F1C6263F30075DBBD /* FavoritesManager.swift */,
+				84CCEE9D1C62575C0075DBBD /* NASAClient.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		8488B20E1C6E3D9C001D791A /* Views & Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				84CCEE841C62544C0075DBBD /* Main.storyboard */,
+				8485D6471C6BA8C60087B424 /* APODCell.swift */,
+			);
+			name = "Views & Storyboards";
+			sourceTree = "<group>";
+		};
+		84CCEE721C62544C0075DBBD = {
+			isa = PBXGroup;
+			children = (
+				84CCEE7D1C62544C0075DBBD /* intergalacticplanetary */,
+				84CCEE911C62544C0075DBBD /* intergalacticplanetaryTests */,
+				84CCEE7C1C62544C0075DBBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84CCEE7C1C62544C0075DBBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84CCEE7B1C62544C0075DBBD /* intergalacticplanetary.app */,
+				84CCEE8E1C62544C0075DBBD /* intergalacticplanetaryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84CCEE7D1C62544C0075DBBD /* intergalacticplanetary */ = {
+			isa = PBXGroup;
+			children = (
+				8488B20E1C6E3D9C001D791A /* Views & Storyboards */,
+				8488B20D1C6E3D97001D791A /* Services */,
+				8488B20C1C6E3D8F001D791A /* ViewControllers */,
+				8488B20B1C6E3D8A001D791A /* Model */,
+				84CCEE7E1C62544C0075DBBD /* AppDelegate.swift */,
+				84CCEE871C62544C0075DBBD /* Assets.xcassets */,
+				84CCEE891C62544C0075DBBD /* Info.plist */,
+			);
+			path = intergalacticplanetary;
+			sourceTree = "<group>";
+		};
+		84CCEE911C62544C0075DBBD /* intergalacticplanetaryTests */ = {
+			isa = PBXGroup;
+			children = (
+				84CCEE921C62544C0075DBBD /* intergalacticplanetaryTests.swift */,
+				84CCEE941C62544C0075DBBD /* Info.plist */,
+			);
+			path = intergalacticplanetaryTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84CCEE7A1C62544C0075DBBD /* intergalacticplanetary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CCEE971C62544C0075DBBD /* Build configuration list for PBXNativeTarget "intergalacticplanetary" */;
+			buildPhases = (
+				84CCEE771C62544C0075DBBD /* Sources */,
+				84CCEE781C62544C0075DBBD /* Frameworks */,
+				84CCEE791C62544C0075DBBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = intergalacticplanetary;
+			productName = intergalacticplanetary;
+			productReference = 84CCEE7B1C62544C0075DBBD /* intergalacticplanetary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84CCEE8D1C62544C0075DBBD /* intergalacticplanetaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CCEE9A1C62544C0075DBBD /* Build configuration list for PBXNativeTarget "intergalacticplanetaryTests" */;
+			buildPhases = (
+				84CCEE8A1C62544C0075DBBD /* Sources */,
+				84CCEE8B1C62544C0075DBBD /* Frameworks */,
+				84CCEE8C1C62544C0075DBBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84CCEE901C62544C0075DBBD /* PBXTargetDependency */,
+			);
+			name = intergalacticplanetaryTests;
+			productName = intergalacticplanetaryTests;
+			productReference = 84CCEE8E1C62544C0075DBBD /* intergalacticplanetaryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84CCEE731C62544C0075DBBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Kenny Schlagel";
+				TargetAttributes = {
+					84CCEE7A1C62544C0075DBBD = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					84CCEE8D1C62544C0075DBBD = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 84CCEE7A1C62544C0075DBBD;
+					};
+				};
+			};
+			buildConfigurationList = 84CCEE761C62544C0075DBBD /* Build configuration list for PBXProject "intergalacticplanetary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84CCEE721C62544C0075DBBD;
+			productRefGroup = 84CCEE7C1C62544C0075DBBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84CCEE7A1C62544C0075DBBD /* intergalacticplanetary */,
+				84CCEE8D1C62544C0075DBBD /* intergalacticplanetaryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84CCEE791C62544C0075DBBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CCEE881C62544C0075DBBD /* Assets.xcassets in Resources */,
+				84CCEE861C62544C0075DBBD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CCEE8C1C62544C0075DBBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84CCEE771C62544C0075DBBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8485D6481C6BA8C60087B424 /* APODCell.swift in Sources */,
+				84CCEEA41C62BFBD0075DBBD /* APODRouter.swift in Sources */,
+				84CCEEA21C6264EA0075DBBD /* APOD.swift in Sources */,
+				8403D2B21C6A5CB800AF6E27 /* Protocols.swift in Sources */,
+				84CCEEA01C6263F30075DBBD /* FavoritesManager.swift in Sources */,
+				84DBD0BC1C6BE7360012EE15 /* FavoritesViewController.swift in Sources */,
+				84CCEE9E1C62575C0075DBBD /* NASAClient.swift in Sources */,
+				84A7844C1C695F1500F85BA3 /* Earth.swift in Sources */,
+				84CCEE7F1C62544C0075DBBD /* AppDelegate.swift in Sources */,
+				84CCEE811C62544C0075DBBD /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CCEE8A1C62544C0075DBBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CCEE931C62544C0075DBBD /* intergalacticplanetaryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84CCEE901C62544C0075DBBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84CCEE7A1C62544C0075DBBD /* intergalacticplanetary */;
+			targetProxy = 84CCEE8F1C62544C0075DBBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84CCEE841C62544C0075DBBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84CCEE851C62544C0075DBBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84CCEE951C62544C0075DBBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		84CCEE961C62544C0075DBBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84CCEE981C62544C0075DBBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = intergalacticplanetary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nduktlabs.intergalacticplanetary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84CCEE991C62544C0075DBBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = intergalacticplanetary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nduktlabs.intergalacticplanetary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		84CCEE9B1C62544C0075DBBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = intergalacticplanetaryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nduktlabs.intergalacticplanetaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/intergalacticplanetary.app/intergalacticplanetary";
+			};
+			name = Debug;
+		};
+		84CCEE9C1C62544C0075DBBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = intergalacticplanetaryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nduktlabs.intergalacticplanetaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/intergalacticplanetary.app/intergalacticplanetary";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84CCEE761C62544C0075DBBD /* Build configuration list for PBXProject "intergalacticplanetary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CCEE951C62544C0075DBBD /* Debug */,
+				84CCEE961C62544C0075DBBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CCEE971C62544C0075DBBD /* Build configuration list for PBXNativeTarget "intergalacticplanetary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CCEE981C62544C0075DBBD /* Debug */,
+				84CCEE991C62544C0075DBBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CCEE9A1C62544C0075DBBD /* Build configuration list for PBXNativeTarget "intergalacticplanetaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CCEE9B1C62544C0075DBBD /* Debug */,
+				84CCEE9C1C62544C0075DBBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84CCEE731C62544C0075DBBD /* Project object */;
+}
