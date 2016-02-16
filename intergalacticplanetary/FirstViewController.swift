@@ -179,6 +179,7 @@ class FirstViewController: UIViewController {
     self.todayButton.frame.origin.x -= 600
     
     // favorites button
+    self.favoritesButton.hidden = false
     if withFavButton {
       self.favoritesButton.alpha = 0.9
     } else {
