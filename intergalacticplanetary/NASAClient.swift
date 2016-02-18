@@ -66,8 +66,7 @@ class NASAClient {
   
   private func parseJSON(data: NSData, completion: NetworkResult) {
     do {
-      let fixedData = fixedJSONData(data)
-      let parseResults = try NSJSONSerialization.JSONObjectWithData(fixedData, options: [])
+      let parseResults = try NSJSONSerialization.JSONObjectWithData(data, options: [])
       if let dictionary = parseResults as? NSDictionary {
         dispatch_async(dispatch_get_main_queue(), {
           completion(dictionary, nil)
@@ -84,6 +83,7 @@ class NASAClient {
     }
   }
   
+  // TODO: plan for escaped quotes
   private func fixedJSONData(data: NSData) -> NSData {
     guard let jsonString = String(data: data, encoding: NSUTF8StringEncoding) else { return data }
     let fixedString = jsonString.stringByReplacingOccurrencesOfString("\\", withString: "'")
