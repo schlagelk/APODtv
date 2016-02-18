@@ -39,6 +39,16 @@
                ReferencedContainer = "container:intergalacticplanetary.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "84267AEA1C766544005D2F5E"
+               BuildableName = "intergalacticplanetaryUITests.xctest"
+               BlueprintName = "intergalacticplanetaryUITests"
+               ReferencedContainer = "container:intergalacticplanetary.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
