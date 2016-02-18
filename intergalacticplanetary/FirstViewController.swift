@@ -20,7 +20,6 @@ class FirstViewController: UIViewController {
   @IBOutlet weak var yesterdayButton: UIButton!
   @IBOutlet weak var todayButton: UIButton!
 
-  let today = NSDate()
   var APODDate = NSDate()
   
   let isFavoriteButtonColorYes: UIColor = UIColor(red: 1, green: 208/255, blue: 87/255, alpha: 0.9)
@@ -38,7 +37,7 @@ class FirstViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     if !weAreComingFromASegue {
-      getAPODForViewUsingDate(today)
+      getAPODForViewUsingDate(NSDate())
     }
   }
   
@@ -103,14 +102,15 @@ class FirstViewController: UIViewController {
   }
   
   @IBAction func todayPressed(sender: AnyObject) {
-    if checkDatesMatch(today, to: APODDate) {
+    var localToday = NSDate()
+    if checkDatesMatch(localToday, to: APODDate) {
       return
     }
     UIView.animateWithDuration(1.5) {
       self.clearView()
     }
-    getAPODForViewUsingDate(today)
-    self.APODDate = today
+    getAPODForViewUsingDate(localToday)
+    self.APODDate = localToday
   }
   
   @IBAction func yesterdayPressed(sender: AnyObject) {

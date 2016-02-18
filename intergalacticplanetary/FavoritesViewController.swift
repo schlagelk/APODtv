@@ -49,6 +49,7 @@ class FavoritesViewController: UICollectionViewController {
       
       // we have an apod an a date, lets set the VC correctly
       destinationVC.weAreComingFromASegue = true
+      destinationVC.APODDate = d
       destinationVC.getAPODForViewUsingDate(d)
       destinationVC.apodOnView = selectedAPOD
     }

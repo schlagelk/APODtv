@@ -107,7 +107,7 @@ class APOD: NSObject, APODDataSource {
   }
   // MARK: Get APOD Methods
   
-  // get multiple APODS
+  // get multiple APODS - not used
   class func getAPODsForFeed(completion: APODSResult) {
     let router = APODRouter()
     let today = NSDate()
