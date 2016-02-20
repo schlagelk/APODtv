@@ -25,7 +25,7 @@ class FirstViewController: UIViewController {
   
   let isFavoriteButtonColorYes: UIColor = UIColor(red: 1, green: 208/255, blue: 87/255, alpha: 0.9)
   let isFavoriteButtonColorNo: UIColor = UIColor.whiteColor()
-  let maxFavoritesCount = 2
+  let maxFavoritesCount = 20
   
   var weAreComingFromASegue = false
   
