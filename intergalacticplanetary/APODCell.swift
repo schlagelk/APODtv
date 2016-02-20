@@ -28,7 +28,7 @@ class APODCell: UICollectionViewCell {
       imageTask = NASAClient.sharedInstance.getImageDataFromUrl(photoUrl) { [weak self] (image, error) in
         guard error == nil else {
           self?.photoImageView.image = nil
-          self?.photoImageLabel.text = "Whoops"
+          self?.photoImageLabel.text = "Loading..."
           self?.photoImageCopy.text = ""
           return
         }
