@@ -17,6 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Qw8-M5-79e">
+                                <rect key="frame" x="940" y="520" width="40" height="40"/>
+                                <color key="color" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earth" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="giP-fB-LlN">
                                 <rect key="frame" x="80" y="170" width="1170" height="820"/>
                                 <constraints>
@@ -34,26 +38,26 @@
                                 <rect key="frame" x="1300" y="170" width="540" height="700"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyZ-xA-eK1">
-                                        <rect key="frame" x="0.0" y="0.0" width="540" height="49"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="41"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="540" height="50"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="42"/>
                                         <color key="textColor" red="1" green="0.81447862250000003" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ys-T9-VMT">
-                                        <rect key="frame" x="0.0" y="54" width="540" height="20"/>
+                                        <rect key="frame" x="0.0" y="55" width="540" height="20"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.74473248106060597" green="0.74473248106060597" blue="0.74473248106060597" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="2cA-lf-asK">
-                                        <rect key="frame" x="0.0" y="79" width="540" height="502"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="2cA-lf-asK">
+                                        <rect key="frame" x="0.0" y="80" width="540" height="502"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iRc-lF-pAf">
-                                        <rect key="frame" x="0.0" y="586" width="540" height="108"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iRc-lF-pAf">
+                                        <rect key="frame" x="0.0" y="587" width="540" height="108"/>
                                         <subviews>
                                             <button opaque="NO" alpha="0.0" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfO-we-aXY">
                                                 <rect key="frame" x="0.0" y="0.0" width="167" height="108"/>
@@ -93,8 +97,8 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEQ-9R-NNl">
-                                        <rect key="frame" x="0.0" y="699" width="540" height="1"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEQ-9R-NNl">
+                                        <rect key="frame" x="0.0" y="700" width="540" height="0.0"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -115,14 +119,18 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Qw8-M5-79e" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="1oe-ho-3Js"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nRU-9V-mMJ" secondAttribute="trailing" constant="60" id="2ZJ-g7-8yc"/>
                             <constraint firstItem="giP-fB-LlN" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="170" id="4e6-2U-BWi"/>
+                            <constraint firstItem="Qw8-M5-79e" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Nzu-VQ-fY8"/>
                             <constraint firstItem="nRU-9V-mMJ" firstAttribute="leading" secondItem="giP-fB-LlN" secondAttribute="trailing" constant="50" id="R28-CE-E8n"/>
                             <constraint firstItem="giP-fB-LlN" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="60" id="TFN-tY-QUH"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="giP-fB-LlN" secondAttribute="bottom" constant="90" id="Ulu-tK-CyS"/>
                             <constraint firstItem="rmY-z2-NqX" firstAttribute="top" secondItem="giP-fB-LlN" secondAttribute="bottom" constant="25" id="gUA-J5-5tV"/>
+                            <constraint firstItem="Qw8-M5-79e" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="hof-k0-sEr"/>
                             <constraint firstItem="nRU-9V-mMJ" firstAttribute="top" secondItem="giP-fB-LlN" secondAttribute="top" id="iIb-RZ-hfm"/>
                             <constraint firstItem="rmY-z2-NqX" firstAttribute="centerX" secondItem="giP-fB-LlN" secondAttribute="centerX" id="mHF-o1-Q2N"/>
+                            <constraint firstItem="Qw8-M5-79e" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="nwu-ZX-6Vy"/>
                             <constraint firstItem="nRU-9V-mMJ" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="100" id="prh-Cj-Dxt"/>
                         </constraints>
                     </view>
@@ -135,6 +143,7 @@
                         <outlet property="favoritesButton" destination="EfO-we-aXY" id="5FD-NR-xkC"/>
                         <outlet property="favoritesErrorLabel" destination="VEQ-9R-NNl" id="H6d-KC-upM"/>
                         <outlet property="imageView" destination="giP-fB-LlN" id="467-VT-K3K"/>
+                        <outlet property="spinner" destination="Qw8-M5-79e" id="rrC-wO-ZC3"/>
                         <outlet property="todayButton" destination="LwL-6M-XZA" id="P3P-ur-KDa"/>
                         <outlet property="yesterdayButton" destination="JG8-6B-949" id="kqq-7U-L4P"/>
                     </connections>
@@ -286,7 +295,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="SSj-f5-3fd"/>
                                 </constraints>
-                                <mutableString key="text">All image rights are owned by those mentioned in the appropriate © labels.  Many thanks to the team at NASA for publishing these magnificent images via their APOD API at https://api.nasa.gov.  In some cases, when we can't load APOD data and on our app icon, we show a lovely image of earth.  This image is credited to NASA/NOAA/GSFC/Suomi NPP/VIIRS/Norman Kuring and is referenced from the following link: http://apod.nasa.gov/apod/ap120130.html.  We also make use of the following two images in our backgrounds: http://apod.nasa.gov/apod/ap130806.html and http://apod.nasa.gov/apod/ap151117.html, which are credited to Subaru Telescope (NAOJ) &amp; DSS and Roberto Colombari respectively.  This project is open sourced and maintained on GitHub: https://github.com/schlagelk/APODtv.  To Kye - the stars are yours mi campeón.</mutableString>
+                                <string key="text">All image rights are owned by those mentioned in the appropriate © labels.  Many thanks to the team at NASA for publishing these magnificent images via their APOD API at https://api.nasa.gov.  In some cases, when we can't load APOD data and on our app icon, we show a lovely image of earth.  This image is credited to NASA/NOAA/GSFC/Suomi NPP/VIIRS/Norman Kuring and is referenced from the following link: http://apod.nasa.gov/apod/ap120130.html.  We also make use of the following two images in our backgrounds: http://apod.nasa.gov/apod/ap130806.html and http://apod.nasa.gov/apod/ap151117.html, which are credited to Subaru Telescope (NAOJ) &amp; DSS and Roberto Colombari respectively.  This project is open sourced and maintained on GitHub: https://github.com/schlagelk/APODtv.  To Kye - the stars are yours mi campeón.</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.9594594595" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

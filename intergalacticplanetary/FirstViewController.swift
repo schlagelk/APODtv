@@ -19,6 +19,7 @@ class FirstViewController: UIViewController {
   @IBOutlet weak var apodExpLabel: UITextView!
   @IBOutlet weak var yesterdayButton: UIButton!
   @IBOutlet weak var todayButton: UIButton!
+  @IBOutlet weak var spinner: UIActivityIndicatorView!
 
   var APODDate = NSDate()
   
@@ -28,11 +29,7 @@ class FirstViewController: UIViewController {
   
   var weAreComingFromASegue = false
   
-  var apodOnView: APOD? {
-    didSet {
-      print("set: \(apodOnView)")
-    }
-  }
+  var apodOnView: APOD?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -46,6 +43,7 @@ class FirstViewController: UIViewController {
   }
   
   func getAPODForViewUsingDate(date: NSDate) {
+    if !weAreComingFromASegue { spinner.startAnimating() }
     
     APOD.getAPODForDate(date: date) { [weak self] (apods, error) in
       guard error == nil, let apod = apods else {
@@ -106,7 +104,7 @@ class FirstViewController: UIViewController {
     if checkDatesMatch(localToday, to: APODDate) {
       return
     }
-    UIView.animateWithDuration(1.5) {
+    UIView.animateWithDuration(0.5) {
       self.clearView()
     }
     getAPODForViewUsingDate(localToday)
@@ -200,6 +198,7 @@ class FirstViewController: UIViewController {
   }
   
   private func animateView() {
+    
     // alphas
     self.imageView.alpha = 1
     self.apodNameLabel.alpha = 1
@@ -215,6 +214,8 @@ class FirstViewController: UIViewController {
     self.favoritesButton.frame.origin.y -= 500
     self.yesterdayButton.frame.origin.y += 500
     self.todayButton.frame.origin.x += 600
+    
+    if !weAreComingFromASegue { spinner.stopAnimating() }
   }
   
   private func clearView() {
