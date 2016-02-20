@@ -190,7 +190,7 @@ class FirstViewController: UIViewController {
     // check for max faves
     if FavoritesManager.sharedInstance.favorites.count > self.maxFavoritesCount {
       self.favoritesButton.hidden = true
-      self.favoritesErrorLabel.text = "You can only have 20 favorites"
+      self.favoritesErrorLabel.text = "You can only have \(self.maxFavoritesCount) favorites"
     }
     
     // misc ui setups
