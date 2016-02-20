@@ -25,7 +25,7 @@ class FirstViewController: UIViewController {
   
   let isFavoriteButtonColorYes: UIColor = UIColor(red: 1, green: 208/255, blue: 87/255, alpha: 0.9)
   let isFavoriteButtonColorNo: UIColor = UIColor.whiteColor()
-  let maxFavoritesCount = 20
+  let maxFavoritesCount = 2
   
   var weAreComingFromASegue = false
   
@@ -126,8 +126,15 @@ class FirstViewController: UIViewController {
     if let apod = apodOnView {
       let isFavorite = FavoritesManager.sharedInstance.favorites.filter { $0.itemId == apod.itemId }.first
       if let isFavorite = isFavorite {
+        // remove
         FavoritesManager.sharedInstance.toggleFavorite(isFavorite)
       } else {
+        //check if maxed out
+        if FavoritesManager.sharedInstance.favorites.count > self.maxFavoritesCount {
+          self.favoritesErrorLabel.text = "You can only have \(self.maxFavoritesCount) favorites"
+          return
+        }
+        // add
         FavoritesManager.sharedInstance.toggleFavorite(apod)
       }
       checkIfFavorite()
@@ -186,12 +193,6 @@ class FirstViewController: UIViewController {
     
     // with error?
     self.errorLabel.text = apod.error
-    
-    // check for max faves
-    if FavoritesManager.sharedInstance.favorites.count > self.maxFavoritesCount {
-      self.favoritesButton.hidden = true
-      self.favoritesErrorLabel.text = "You can only have \(self.maxFavoritesCount) favorites"
-    }
     
     // misc ui setups
     self.apodExpLabel.textContainerInset = UIEdgeInsetsZero
