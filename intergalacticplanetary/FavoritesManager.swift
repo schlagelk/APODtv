@@ -22,7 +22,7 @@ class FavoritesManager {
   }
   
   func toggleFavorite(apod: APOD) {
-    let isFavorite = FavoritesManager.sharedInstance.favorites.filter { $0.itemId == apod.itemId }.first
+    let isFavorite = FavoritesManager.sharedInstance.favorites.filter { $0.photoUrl == apod.photoUrl }.first
     if let isFavorite = isFavorite {
       removeFavorite(apod)
     } else {

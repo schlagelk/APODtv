@@ -124,7 +124,7 @@ class FirstViewController: UIViewController {
   //MARK: Favorites
   @IBAction func favoritePressed(sender: AnyObject) {
     if let apod = apodOnView {
-      let isFavorite = FavoritesManager.sharedInstance.favorites.filter { $0.itemId == apod.itemId }.first
+      let isFavorite = FavoritesManager.sharedInstance.favorites.filter { $0.photoUrl == apod.photoUrl }.first
       if let isFavorite = isFavorite {
         // remove
         FavoritesManager.sharedInstance.toggleFavorite(isFavorite)
@@ -142,7 +142,7 @@ class FirstViewController: UIViewController {
   }
   
   private func checkIfFavorite() {
-    let isFavorite = FavoritesManager.sharedInstance.favorites.filter { $0.itemId == apodOnView?.itemId }.first
+    let isFavorite = FavoritesManager.sharedInstance.favorites.filter { $0.photoUrl == apodOnView?.photoUrl }.first
     if isFavorite != nil {
       self.favoritesButton.tintColor = isFavoriteButtonColorYes
     } else {
