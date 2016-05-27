@@ -12,7 +12,7 @@ class FavoritesManager {
   static let favoritesKey = "Favorites"
   static let sharedInstance = FavoritesManager()
   
-  init() {
+  private init() {
     if let data = NSUserDefaults.standardUserDefaults().objectForKey(FavoritesManager.favoritesKey) as? NSData,
       favoritesArray = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [APOD] {
         favorites = favoritesArray
